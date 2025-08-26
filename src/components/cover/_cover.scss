@@ -1,0 +1,9 @@
+@use "../../style/colors" as *;
+@use "../../style/responsive" as *;
+
+.cover_wrap {
+  width: 100%;
+  max-width: 1240px;
+  margin: 20px 0;
+  position: relative;
+}

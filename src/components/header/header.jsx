@@ -1,22 +1,20 @@
 /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// Header du site /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
 
-import { NavLink } from 'react-router';
-import logo from '../../assets/logo_O.png';
-import './_header.scss';
+import { NavLink } from "react-router-dom";
+import logo_O from "../../assets/logo_O.png";
+import "./_header.scss";
 
-/// /// création du composant de fonction header
-function Header() {
+function Header() {                                                                     /// /// création du composant de fonction header
   return (
-    /// /// création de l'élément principal et de sa classe attitrée
-    <header className="header">
-      <img
-        src={logo}
+    <header className="header">                                                     
+        <img
+        src={logo_O}
         alt="Logo de Kasa"
-        className="header__img"
+        className="header_img"
       />
 
       {/*** création de la navigation ***/}
-      <nav className="header__nav">
+      <nav className="header_nav">
         {/*** page d'accueil ***/}
         <NavLink
           to="/"

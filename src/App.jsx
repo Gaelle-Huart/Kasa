@@ -1,9 +1,11 @@
-import Header from "./components/header/header";
+import Header from "./components/header/header.jsx";
+import Footer from "./components/footer/footer.jsx";
 
 function App() {
   return (
     <>
       <Header />
+      <Footer />
     </>
   )
 }
