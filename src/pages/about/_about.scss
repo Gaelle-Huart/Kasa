@@ -1,0 +1,15 @@
+@use "../../style/responsive" as *;
+
+.about {
+  .collapse {
+    @include tablet {
+      width: 100%;
+      margin: 15px auto; 
+    }
+    @include mobile {
+      margin: 15px auto; 
+      width: 100%;
+      padding: 0 30px;
+    }
+  }
+}

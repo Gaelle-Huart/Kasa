@@ -1,14 +1,14 @@
-import coverIndex from "../../assets/bkgd_index.png";
-import coverAbout from "../../assets/bkgd_about.png";
+import imgIndex from "../../assets/bkgd_index.png";
+import imgAbout from "../../assets/bkgd_about.png";
 import "./_cover.scss";
 
-function Cover({page, content}) {
-  const src = page === "index" ? coverIndex : coverAbout
+function Cover({page, txt}) {
+  const src = page === "index" ? imgIndex : imgAbout;
   return (
-    <div className="cover_wrap">
-      <img src={src} alt="Image de fond" className="cover_wrap-img" />
-      <div className="cover_txt">
-        <p>{content}</p>
+    <div className="cover__wrap">
+      <img src={src} alt="Image de fond" className="cover__img" />
+      <div className="cover__txt">
+        <p>{txt}</p>
       </div>
     </div>
   )
