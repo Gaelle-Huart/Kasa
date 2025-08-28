@@ -1,7 +1,7 @@
 /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// Footer du site /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
 
-import logo_W from "../../assets/Logo_W.png";
-import "./_footer.scss";
+import logo_W from "../assets/Logo_W.png";
+import "../style/_footer.scss";
 
 function Footer() {
   return (

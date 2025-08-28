@@ -1,6 +1,6 @@
-@use "../../style/colors" as *;
-@use "../../style/general" as *;
-@use "../../style/responsive" as *;
+@use "./colors" as *;
+@use "./general" as *;
+@use "./responsive" as *;
 
 .cover {
   width: 100%;

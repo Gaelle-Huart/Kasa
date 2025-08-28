@@ -1,8 +1,8 @@
 /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// Header du site /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
 
 import { NavLink } from "react-router-dom";
-import logo_O from "../../assets/logo_O.png";
-import "./_header.scss";
+import logo_O from "../assets/logo_O.png";
+import "../style/_header.scss";
 
 function Header() {                                                                     /// /// création du composant de fonction header
   return (

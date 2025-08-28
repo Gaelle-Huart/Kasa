@@ -1,5 +1,4 @@
-import Cover from "../../components/cover/cover.jsx";
-import "./_about.scss";
+import Cover from "../components/cover.jsx"; 
 
 export function About() {
   return (

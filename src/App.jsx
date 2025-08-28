@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/header/header.jsx";
-import Footer from "./components/footer/footer.jsx";
-import Index from "./pages/index/index.jsx";
-import About from "./pages/about/about.jsx";
+import Header from "./components/header.jsx";
+import Footer from "./components/footer.jsx";
+import Index from "./pages/index.jsx";
+import About from "./pages/about.jsx";
 
 function App() {
   return (
