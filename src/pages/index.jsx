@@ -1,4 +1,4 @@
-import Cover from "../components/cover.jsx";
+import Cover from "../components/Cover.jsx";
 
 export function Index() {
   return (
