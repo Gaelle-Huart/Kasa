@@ -5,9 +5,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px auto 30px auto;
   width: 1023px;
-  list-style-type:armenian ;
+  max-height: fit-content;
+  margin: 35px auto 30px auto;
   @include mobile {
     max-width: 100%;
     margin: 15px auto; 
@@ -37,31 +37,35 @@
   &__content {
     display: flex;
     justify-content: space-between;
-    position: relative;
     width: 100%;
-    max-height: fit-content;
+    max-height: 0;
+    position: relative;
     font-size: 18px;
     font-weight: 400;
     color: black;
     padding: 25px 20px 20px 20px;
-    margin: -5px 0 0 0;
+    margin: -30px 0 0 0;
     background-color: $secondColor;
     border-radius: 0 0 10px 10px;
     z-index: -1;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
     user-select: none;
     @include mobile {
       font-size: 12px;
       line-height: 17px;
     }
   }
-  &:open {
-    transition: max-height 0.8s ease-in-out;
-  }
+}
+.detail[open] .detail__content {
+  max-height: fit-content;
+  margin: -8px 0 0 0;
+  opacity: 1;
 }
 
-.collapse .chevron-up {
-  transition: all 0.2s ease-in-out;
+.detail .chevron {
+  transition: all 0.25s ease-in-out;
 }
-.collapse.open .chevron-up {
+.detail[open] .chevron {
   transform: rotate(-180deg);
 }

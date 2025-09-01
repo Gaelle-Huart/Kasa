@@ -2,6 +2,9 @@ import Er404 from "../assets/404.png";
 import { NavLink } from "react-router-dom";
 import "../style/_error.scss";
 
+/** Fonction affichant la page 404
+ * @return génère les éléments html de la page 
+ */
 function Error() {
   return (
     <main className="error">
