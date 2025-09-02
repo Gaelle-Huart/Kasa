@@ -1,0 +1,14 @@
+@use "../style/responsive" as *;
+
+.rating {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 3px;
+  margin-top: 6px;
+  @include mobile {
+    img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}

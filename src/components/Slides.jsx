@@ -5,7 +5,7 @@ import ArrowRight from "../assets/arrow_right.png";
 import RentData from "../rawdata/logements.json";
 import "../style/_slides.scss";
 
-/** Fonction pour la gestion des slides sur la page de location (Rentable)
+/** Fonction pour la gestion des slides sur la page de location (Rental)
  * @if pour l'affichage de l'interface complète (numéro et flèches)
  * @else pour le cas où l'affichae complet n'est pas nécessaire 
  */
