@@ -2,7 +2,7 @@ import Cover from "../components/Cover.jsx";
 import Detail from "../components/Detail.jsx";
 import "../style/_about.scss";
 
-/** Fonction de la page about
+/** Fonction permettant l'affichage de la page about
  * @return injecte le html en utilisant des balises main et section
  */
 export function About() {

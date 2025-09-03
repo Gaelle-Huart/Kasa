@@ -6,6 +6,8 @@ import Rating from "../components/Rating.jsx";
 import Detail from "../components/Detail.jsx";
 import Tag from "../components/Tag.jsx";
 
+import "../style/_rental.scss";
+
 function Rental() {
   const {id} = useParams()
   const rent = RentData.find((rent) => rent.id === id)
@@ -32,11 +34,15 @@ function Rental() {
           </div>
         </section>
         <section className="gallery__detail">
-          <Detail 
+          <Detail
+            page="rental"
+            className="detail"
             title="Description"
             content={rent.description}
           />
           <Detail
+            page="rental"
+            className="detail"
             title="Equipements"
             content= {
               <ul>

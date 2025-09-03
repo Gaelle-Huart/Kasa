@@ -6,7 +6,7 @@ function Cover({page, txt}) {
   const src = page === "index" ? imgIndex : imgAbout;
   return (
     <div className="cover__wrap">
-      <img src={src} alt="" className="cover__img" />
+      <img src={src} alt="" className={`cover__img ${page === "index" ? "shadow" : ""}`} />
       <div className="cover__txt">
         <p>{txt}</p>
       </div>

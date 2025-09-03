@@ -2,11 +2,11 @@ import { useState } from "react";
 import "../style/_detail.scss";
 import ArrowUp from "../assets/arrow_up.png";
 
-function Detail({title, children}) {
+function Detail({title, page, children}) {
   const [open] = useState(false)
     return (
     <details className={`detail ${open ? "open" : ""}`}>
-      <summary className="detail__title">
+      <summary className={`detail__title ${page === "rental" ? "modif" : ""}`}>
         {title}
         <img src={ArrowUp} alt="Chevron" className={`chevron ${open ? "open" : ""}`}/>
       </summary>

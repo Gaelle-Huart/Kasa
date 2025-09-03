@@ -2,23 +2,25 @@
 @use "./responsive" as *;
 
 .gallery {
-  max-width: 1240px;
+  width: 1240px;
   display: flex;
   flex-direction: column;
   margin: 50px auto;
   &__container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1040px 200px;
     box-sizing: border-box;
     &_info {
-      h2 {
+      & h2 {
         font-size: 36px;
         color: $mainColor;
+        margin: 0;
       }
-      p {
+      & p {
         font-size: 18px;
         color: $footer;
+        margin: 5px 0 5px 0;
       }
     }
     &_host {
@@ -29,14 +31,12 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        gap: 50px;
+        gap: 10px;
         p {
-          width: 30%;
           font-size: 18px;
           color: $mainColor;
         }
         img {
-          width: 64px;
           height: 64px;
           border-radius: 30px;
         }
@@ -44,7 +44,20 @@
     }
   }
   &__detail {
-    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 76px;
+    .detail {
+      width: 582px;
+      border-radius: 10px;
+      margin: 25px auto 0;
+      &__title {
+        width: 100%;
+      }
+      &__content {
+        width: 100%;
+      }
+    }
   }
 }

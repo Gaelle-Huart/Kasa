@@ -15,14 +15,21 @@
     flex-direction: column;
   }
   &__title {
+    height: 54px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 1023px;
-    padding: 10px 20px;
+    padding: 10px 20px 10px 15px;
     background-color: $mainColor;
     border-radius: 5px;
     user-select: none;
+    &.modif {
+      height: 52px;
+      font-size: 18px;
+      border-radius: 10px;
+      padding: 10px 20px 10px 10px;
+    }
     @include tablet {
       width: 100%;
     }

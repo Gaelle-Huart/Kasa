@@ -43,7 +43,7 @@ function Slides() {
           className="slideshow__container_arrowright arrow" 
           onClick={nextImg}
         />
-        <span className="carousel__container_indicator">
+        <span className="slideshow__container_indicator">
           {slide + 1}/{rent.pictures.length}
         </span>
       </div>

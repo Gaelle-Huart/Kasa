@@ -10,9 +10,13 @@
     margin-top: 15px;
   }
   &__container {
+    min-width: 115px;
+    height: 25px;
     display: flex;
     align-items: center;
     gap: 20px;
+    padding-left: 0;
+    margin-bottom: 0;
     @include mobile {
       flex-wrap: wrap;
       gap: 10px;
