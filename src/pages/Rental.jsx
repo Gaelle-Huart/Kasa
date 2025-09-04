@@ -10,7 +10,7 @@ import "../style/_rental.scss";
 
 function Rental() {
   const {id} = useParams()
-  const rent = RentData.find((rent) => rent.id === id)
+  const rent = RentData.find((rent) => String(rent.id) === id)
   if(!rent) {
     return <Error />
   } else {
@@ -23,35 +23,25 @@ function Rental() {
               <h2>{rent.title}</h2>
               <p>{rent.location}</p>
             </div>
-            <Tag />
+            <Tag tags={rent.tags}/>
           </div>
           <div className="gallery__container_host">
             <div className="host_info">
               <p>{rent.host.name}</p>
               <img src={rent.host.picture} alt="" />
             </div>
-            <Rating />
+            <Rating rating={rent.rating}/>
           </div>
         </section>
         <section className="gallery__detail">
-          <Detail
-            page="rental"
-            className="detail"
-            title="Description"
-            content={rent.description}
-          />
-          <Detail
-            page="rental"
-            className="detail"
-            title="Equipements"
-            content= {
-              <ul>
-                {rent.equipments.map((equipments, index) => (
-                  <li key={index}>{equipments}</li>
-                ))}
-              </ul>
-            }
-          />
+          <Detail page="rental" className="detail" title="Description">
+            {rent.description}
+          </Detail>
+          <Detail page="rental" className="detail" title="Equipements">
+            {rent.equipments.map((item, index) => (
+              <span key={index}>{item}</span>
+            ))}
+          </Detail>
         </section>
       </main>
     )

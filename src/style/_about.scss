@@ -1,15 +1,17 @@
 @use "./responsive" as *;
 
 .about {
+  max-width: 100%;
+  margin: 0 auto;
   &__section {
+    @include desktop {
+      margin: 0 auto;
+    }
     @include tablet {
-      width: 100%;
-      margin: 15px auto; 
+      margin: 0 auto;
     }
     @include mobile {
-      margin: 15px auto; 
-      width: 100%;
-      padding: 0 30px;
+      margin: 0 auto;
     }
   }
 }
