@@ -3,11 +3,12 @@
 
 .detail {
   width: 1023px;
+  max-height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: fit-content;
   margin: 35px auto 30px auto;
+  overflow: hidden;
   @include desktop {
     width: min(100% - 140px);
   }
@@ -55,10 +56,11 @@
     text-align: justify;
     position: relative;
     font-size: 18px;
+    line-height: 143%;
     font-weight: 400;
     color: black;
     padding: 25px 20px 20px 20px;
-    margin: -40px 0 0 0;
+    margin: -70px 0 0 0;
     background-color: $secondColor;
     border-radius: 0 0 10px 10px;
     z-index: -1;
@@ -69,6 +71,9 @@
       font-size: 12px;
       line-height: 17px;
       padding: 15px 10px 10px 10px;
+    }
+    & span {
+      font-weight: 400;
     }
   }
 }
