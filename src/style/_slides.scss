@@ -4,14 +4,20 @@
 .slideshow {
   width: 100%;
   margin-bottom: 30px;
-  @include mobile {
+  @include tablet {
     margin-bottom: 20px;
+  }
+  @include mobile {
+    margin-bottom: 10px;
   }
   &__container {
     max-width: 1240px;
     height: 415px;
     display: block;
     position: relative;
+    @include tablet {
+      height: 330px;
+    }
     @include mobile {
       height: 255px;
     }
@@ -19,18 +25,40 @@
       position: absolute;
       top: 36%;
       left: 0;
+      @include desktop {
+        width: 75px;
+        height: 95px;
+        top: 41%;
+      }
+      @include tablet {
+        width: 60px;
+        height: 75px;
+        top: 41%;
+      }
       @include mobile {
-      height: 32px;
-      width: 24px;
+      height: 36px;
+      width: 28px;
+      top: 45%;
       }
     }
     &_arrowright {
       position: absolute;
       top: 36%;
       right: 0;
+      @include desktop {
+        width: 75px;
+        height: 95px;
+        top: 41%;
+      }
+      @include tablet {
+        width: 60px;
+        height: 75px;
+        top: 41%;
+      }
       @include mobile {
-        height: 32px;
-        width: 24px;
+        height: 36px;
+        width: 28px;
+        top: 45%;
       }
     }
     .arrow:hover {

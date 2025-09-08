@@ -8,7 +8,7 @@ function Detail({page, title, children}) {
         {title}
         <img src={ArrowUp} alt="" className="chevron" />
       </summary>
-      <p className="detail__content" >{children}</p>
+      <div className="detail__content" >{children}</div>
     </details>
   )
 }

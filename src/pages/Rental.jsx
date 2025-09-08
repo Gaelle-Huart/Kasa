@@ -39,7 +39,7 @@ function Rental() {
           </Detail>
           <Detail page="rental" className="detail" title="Equipements">
             {rent.equipments.map((item, index) => (
-              <span key={index}>{item}</span>
+              <p key={index}>{item}</p>
             ))}
           </Detail>
         </section>

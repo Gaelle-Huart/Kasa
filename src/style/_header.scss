@@ -20,37 +20,43 @@
     align-items: center;
     margin: 20px 20px;
   }
-
   &_img {
     align-items: center;
     height: 68px;
     width: 210px;
+    @include tablet {
+      height: 54px;
+      width: 168px;
+    }
     @include mobile {
       height: 46px;
       width: 135px;
     }
   }
-
   &_nav {
     display: flex;
     align-items: center;
     gap: 65px;
+    @include tablet {
+      gap: 45px;
+    }
     @include mobile {
       gap: 22px;
     }
-
     a {
       font-size: 24px;
       color: black;
       font-weight: 500;
       position: relative;
       text-decoration: none;
+      @include tablet {
+        font-size: 18px;
+      }
       @include mobile {
         font-size: 12px;
         line-height: 17px;
         text-transform: uppercase;
       }
-
       &.active::after {
         content: '';
         position: absolute;
