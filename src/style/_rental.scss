@@ -131,21 +131,5 @@
       grid-template-columns: repeat(1, 1fr);
       gap: 10px;
     }
-    .detail {
-      width: 100%;
-      border-radius: 10px;
-      margin: 25px auto 0;
-      @include mobile {
-        width: 100%;
-        margin: 10px 0 0 0;
-      }
-      &__title {
-        width: 100%;
-      }
-      &__content {
-        width: 100%;
-        text-align: justify;
-      }
-    }
   }
 }

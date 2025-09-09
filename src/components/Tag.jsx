@@ -1,5 +1,9 @@
 import "../style/_tag.scss";
 
+/** Cette fonction gère le comportement des tags sur le site
+ * @param {*} param0 
+ * @return injecte les balises html nécessaires
+ */
 function Tag({tags}) {
   return (
     <div className="tag">

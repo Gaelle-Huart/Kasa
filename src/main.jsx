@@ -1,5 +1,5 @@
 import React from "react";
-import DOM from "react-dom/client";
+import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./index.scss";
@@ -10,8 +10,9 @@ import About from "./pages/About.jsx";
 import Rental from "./pages/Rental.jsx";
 import Error from "./pages/Error.jsx";
 
-
-DOM.createRoot(document.getElementById('root')).render(
+/** Fichier qui crée le rendu dans le DOM
+ */
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
