@@ -6,17 +6,15 @@
   max-width: 1240px;
   margin: 50px auto;
   @include desktop {
-    width: min(100% - 140px);
+    width: 100%;
     margin: 50px auto;
   }
   @include tablet {
-    max-width: 100%;
-    width: min(100% - 60px);
+    width: 100%;
     margin: 30px auto;
   }
   @include mobile {
-    max-width: 100%;
-    width: min(100% - 40px);
+    width: 100%;
     background-color: $white;
     margin: 0 auto;
   }
@@ -32,14 +30,12 @@
     padding: 50px;
     @include desktop {
       max-width: 100%;
-      // width: min(100% - 140px);
       margin: 0 auto;
       padding: 30px;
       gap: 40px;
     }
     @include tablet {
       max-width: fit-content;
-      // width: min(100% - 60px);
       grid-template-columns: repeat(2, 1fr);
       margin: 0 auto;
       padding: 30px;
@@ -47,7 +43,6 @@
     }
     @include mobile {
       max-width: fit-content;
-      // width: min(100% - 40px);
       grid-template-columns: repeat(1, 1fr);
       background-color: $white;
       margin: 0 auto;

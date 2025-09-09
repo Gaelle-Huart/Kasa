@@ -7,10 +7,10 @@ import Gallery from "../components/Gallery.jsx";
  */
 export function Index() {
   return (
-    <>
+    <main className="index">
       <Cover page="index" txt="Chez vous, partout et ailleurs" />
       <Gallery />
-    </>
+    </main>
   )
 }
 

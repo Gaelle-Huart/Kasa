@@ -3,7 +3,19 @@
 
 .about {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 40px auto;
+  @include desktop {
+    width: min(100% - 140px);
+    margin: 40px auto;
+  }
+  @include tablet {
+    width: min(100% - 80px);
+    margin: 30px auto;
+  }
+  @include mobile {
+    width: min(100% - 40px);
+    margin: 20px auto;
+  }
   &__section {
     @include desktop {
       margin: 0 auto;

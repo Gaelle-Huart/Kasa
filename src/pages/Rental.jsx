@@ -23,17 +23,17 @@ function Rental() {
     return <Error />
   } else {
     return (
-      <main className="gallery">
+      <main className="rent">
         <Slides />
-        <section className="gallery__container">
-          <div className="gallery__container_info">
+        <section className="rent__container">
+          <div className="rent__container_info">
             <div>
               <h2>{rent.title}</h2>
               <p>{rent.location}</p>
             </div>
             <Tag tags={rent.tags}/>
           </div>
-          <div className="gallery__container_host">
+          <div className="rent__container_host">
             <div className="host_info">
               <p>{rent.host.name}</p>
               <img src={rent.host.picture} alt="" />
@@ -41,7 +41,7 @@ function Rental() {
             <Rating rating={rent.rating}/>
           </div>
         </section>
-        <section className="gallery__detail">
+        <section className="rent__detail">
           <details className="detail">
             <summary className="detail__title modif">
               Description

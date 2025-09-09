@@ -4,7 +4,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 30px auto;
+  margin: 35px auto 30px auto;
   max-width: 1240px;
   @include desktop {
     max-width: 100%;

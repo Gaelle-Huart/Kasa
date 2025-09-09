@@ -1,5 +1,6 @@
 /// /// /// /// /// /// /// /// /// /// /// /// /// /// /// Style principal /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
 @use "./style/colors" as *;
+@use "./style/responsive" as *;
 
 body {
   margin: 0 auto;
@@ -7,4 +8,19 @@ body {
   width: 100%;
   font-family: 'Arial', sans-serif;
   background-color: $white;
+}
+
+.index {
+  margin: 0 auto;
+  @include desktop {
+    width: min(100% - 140px)
+  }
+  @include tablet {
+    width: min(100% - 80px);
+    margin: 30px auto;
+  }
+  @include mobile {
+    width: min(100% - 40px);
+    margin: 20px auto;
+  }
 }
