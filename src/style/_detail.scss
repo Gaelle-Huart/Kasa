@@ -4,7 +4,6 @@
 .detail {
   max-width: 1023px;
   width: 100%;
-  max-height: fit-content;
   display: flex;
   flex-direction: column;
   margin: 25px auto 0 auto;
@@ -25,6 +24,12 @@
     z-index: 1;
     border-radius: 5px;
     user-select: none;
+    @include tablet {
+      width: 100%;
+      height: 47px;
+      padding: 10px 15px 10px 20px;
+      font-size: 16px;
+    }
     @include mobile {
       height: 40px;
       padding: 10px 15px 10px 10px;
@@ -77,20 +82,11 @@
   transform: rotate(-180deg);
 }
 
-.modif {
-  font-size: 18px;
+.is-rounder {
   border-radius: 10px;
+}
+
+.is-smaller {
+  font-size: 18px;
   padding: 10px 20px 10px 10px;
-  @include tablet {
-    width: 100%;
-    height: 47px;
-    padding: 10px 15px 10px 20px;
-    font-size: 16px;
-  }
-  @include mobile {
-    width: 100%;
-    height: 40px;
-    padding: 10px 15px 10px 10px;
-    font-size: 13px;
-  }
 }

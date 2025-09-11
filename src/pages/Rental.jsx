@@ -43,14 +43,14 @@ function Rental() {
         </section>
         <section className="rent__detail">
           <details className="detail">
-            <summary className="detail__title modif">
+            <summary className="detail__title is-rounder is-smaller">
               Description
               <img src={ArrowUp} alt="" className="chevron" />
             </summary>
             <p className="detail__content">{rent.description}</p>
           </details>
           <details className="detail">
-            <summary className="detail__title modif">
+            <summary className="detail__title is-rounder is-smaller">
               Equipements
               <img src={ArrowUp} alt="" className="chevron" />
             </summary>
