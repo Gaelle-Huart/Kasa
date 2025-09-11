@@ -9,7 +9,7 @@ import "../style/_rating.scss";
  */
 function Rating({rating}) {
   return (
-    <span className="rating">
+    <span className="rating" aria-label={`Note de ${rating} sur 5}`}>
       {[...Array(5)].map((_, i) => (
         <img key={i} 
           src={i < rating ? OrStar : GreyStar}

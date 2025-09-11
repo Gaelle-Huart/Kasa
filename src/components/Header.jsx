@@ -9,7 +9,7 @@ function Header() {                                                             
     <header className="header">                                                     
       <img
       src={logo_O}
-      alt="Logo de Kasa"
+      alt="Kasa"
       className="header_img"
       />
       <nav className="header_nav">

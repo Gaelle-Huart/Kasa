@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
-import RentData from "../rawdata/logements.json";
 import "../style/_gallery.scss";
 
-function Gallery() {
+function Gallery({gallery}) {
   const index = location.pathname === "/"
   return (
     <section className="gallery">
       <div className="gallery__cards">
-        {RentData.map((rent) => (
+        {gallery.map((rent) => (
           <div key={rent.id} className="gallery__cards_item">
             <Link to={'/rental/' + rent.id} className="gallery__cards_item_link">
               <div className="container">

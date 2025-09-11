@@ -8,6 +8,7 @@ import ArrowUp from "../assets/arrow_up.png";
 
 import "../style/_rental.scss";
 import "../style/_detail.scss";
+import Detail from "../components/Detail.jsx";
 
 /** fonction qui gère le contenu de la page rental (locations)
  * @if ici permet de retourner la page error si aucune donnée de location n'est trouvée
@@ -24,7 +25,7 @@ function Rental() {
   } else {
     return (
       <main className="rent">
-        <Slides />
+        <Slides pictures={rent.pictures} title={rent.title}/>
         <section className="rent__container">
           <div className="rent__container_info">
             <div>
@@ -42,23 +43,14 @@ function Rental() {
           </div>
         </section>
         <section className="rent__detail">
-          <details className="detail">
-            <summary className="detail__title is-rounder is-smaller">
-              Description
-              <img src={ArrowUp} alt="" className="chevron" />
-            </summary>
-            <p className="detail__content">{rent.description}</p>
-          </details>
-          <details className="detail">
-            <summary className="detail__title is-rounder is-smaller">
-              Equipements
-              <img src={ArrowUp} alt="" className="chevron" />
-            </summary>
-            <ul className="detail__content">
-              {rent.equipments.map((item, index) => (
-              <li key={index}>{item}</li>))}
-            </ul>
-          </details>
+          <Detail title="Description" page="rental">
+            {rent.description}
+          </Detail>
+          <Detail title="Equipements" page="rental">
+            {rent.equipments.map((item, index) => (
+              <p key={index}>{item}</p>
+            ))}
+          </Detail>
         </section>
       </main>
     )

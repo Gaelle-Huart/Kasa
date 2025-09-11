@@ -22,9 +22,14 @@
       height: 255px;
     }
     &_arrowleft {
+      width: fit-content;
+      height: fit-content;
       position: absolute;
       top: 36%;
       left: 0;
+      background-color: transparent;
+      border: none;
+      padding: 0;
       @include desktop {
         width: 75px;
         height: 95px;
@@ -42,9 +47,14 @@
       }
     }
     &_arrowright {
+      width: fit-content;
+      height: fit-content;
       position: absolute;
       top: 36%;
       right: 0;
+      background-color: transparent;
+      border: none;
+      padding: 0;
       @include desktop {
         width: 75px;
         height: 95px;
@@ -60,9 +70,6 @@
         width: 28px;
         top: 45%;
       }
-    }
-    .arrow:hover {
-      cursor: pointer;
     }
     &_indicator {
       font-size: 18px;
@@ -86,5 +93,26 @@
     &_slidehidden {
       display: none;
     }
+  }
+}
+
+.arrow {
+  @include desktop {
+    width: 75px;
+    height: 95px;
+    top: 41%;
+  }
+  @include tablet {
+    width: 60px;
+    height: 75px;
+    top: 41%;
+  }
+  @include mobile {
+    height: 36px;
+    width: 28px;
+    top: 45%;
+  }
+  &:hover {
+    cursor: pointer;
   }
 }
