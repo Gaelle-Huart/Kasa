@@ -1,5 +1,3 @@
-/// /// /// /// /// /// /// /// /// /// /// /// /// /// /// Footer du site /// /// /// /// /// /// /// /// /// /// /// /// /// /// ///
-
 import logo_W from "../assets/Logo_W.png";
 import "../style/_footer.scss";
 
