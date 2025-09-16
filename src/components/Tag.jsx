@@ -18,4 +18,4 @@ function Tag({tags}) {
   )
 }
 
-export default Tag
+export default Tag;

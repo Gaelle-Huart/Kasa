@@ -1,8 +1,6 @@
 import { useState } from "react";
-// import { useParams } from "react-router-dom";
 import ArrowLeft from "../assets/arrow_left.png";
 import ArrowRight from "../assets/arrow_right.png";
-// import RentData from "../rawdata/logements.json";
 import "../style/_slides.scss";
 
 /** Fonction pour la gestion des slides sur la page de location (Rental)
@@ -10,8 +8,6 @@ import "../style/_slides.scss";
  * @else pour le cas où l'affichae complet n'est pas nécessaire 
  */
 function Slides({pictures, title}) {
-  // const { id } = useParams()
-  // const rent = RentData.find((rent) => rent.id === id)
   const [slide, setSlide] = useState(0)
   const prevImg = () => {
     setSlide(slide === 0 ? pictures.length - 1 : slide - 1)

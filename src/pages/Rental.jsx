@@ -4,7 +4,6 @@ import RentData from "../rawdata/logements.json";
 import Slides from "../components/Slides.jsx";
 import Rating from "../components/Rating.jsx";
 import Tag from "../components/Tag.jsx";
-import ArrowUp from "../assets/arrow_up.png";
 
 import "../style/_rental.scss";
 import "../style/_detail.scss";
@@ -16,12 +15,13 @@ import Detail from "../components/Detail.jsx";
  * @Slides est un composant qui gère les slides (images de la location)
  * @Tag est une composant qui gère les tags
  * @Rating est un composant qui gère les notes
+ * @Detail est le composant qui gère les collapses
  */
 function Rental() {
   const {id} = useParams()
   const rent = RentData.find((rent) => String(rent.id) === id)
   if(!rent) {
-    return <Error />
+    return <Error />;
   } else {
     return (
       <main className="rent">
