@@ -10,6 +10,7 @@ import "../style/_detail.scss";
 import Detail from "../components/Detail.jsx";
 
 /** fonction qui gère le contenu de la page rental (locations)
+ * @useParams hook fourni par React qui permet de récupérer les paramètres dynamiques de l'URL (ici id : /rental/(b5289z24))
  * @if ici permet de retourner la page error si aucune donnée de location n'est trouvée
  * @returns injecte les balises (sémantiques de préférence) nécessaires à la page
  * @Slides est un composant qui gère les slides (images de la location)

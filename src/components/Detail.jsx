@@ -4,7 +4,7 @@ import ArrowUp from "../assets/arrow_up.png";
 function Detail({page, title, children}) {
   return (
     <details className="detail">
-      <summary className={`detail__title ${page === "rental" ? "is-rounded is-smaller" : ""}`}> 
+      <summary className={`detail__title ${page === "rental" ? "is-rounder is-smaller" : ""}`}> 
         {title}
         <img src={ArrowUp} alt="" className="chevron" />
       </summary>

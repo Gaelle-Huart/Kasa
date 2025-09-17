@@ -3,7 +3,7 @@ import ArrowLeft from "../assets/arrow_left.png";
 import ArrowRight from "../assets/arrow_right.png";
 import "../style/_slides.scss";
 
-/** Fonction pour la gestion des slides sur la page de location (Rental)
+/** Fonction pour la gestion des slides sur la page de location (Rental), c'est un composant contrôlé (par React)
  * @if pour l'affichage de l'interface complète (numéro et flèches)
  * @else pour le cas où l'affichae complet n'est pas nécessaire 
  */
