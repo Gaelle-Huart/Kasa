@@ -13,7 +13,7 @@ function Rating({rating}) {
       {[...Array(5)].map((_, i) => (
         <img key={i} 
           src={i < rating ? OrStar : GreyStar}
-          alt={i < rating ? "Etoile orange" : "Etoile grise"}
+          alt=""
         />
       ))}
     </span>
